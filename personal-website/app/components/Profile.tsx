@@ -5,14 +5,25 @@ import profilePic from '../../public/profilePic.jpg'
 const Profile = () => {
   return (
     <div className='profileContainer'>
-        <Image 
-          src={profilePic} 
-          className='profilePic'
-          alt='profile picture'
-        />
+        <div className='hover-3d'>
+          <Image 
+            src={profilePic} 
+            className='profilePic'
+            alt='profile picture'
+          />
+
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <div className='profileDetails'>
           <h1>Radha Kotra</h1>
-          <h2>Software Engineer | Computer Science @ uWaterloo</h2>
+          <h3>Software Engineer | Computer Science @ uWaterloo</h3>
         </div>
     </div>
   )
