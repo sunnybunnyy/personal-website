@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { StaticImageData } from 'next/image';
 
-interface Props {
+export interface HighlightProps {
     logoSrc: StaticImageData;
     logoAlt: string;
     iconSrc: StaticImageData;
@@ -10,7 +10,7 @@ interface Props {
     date: string;
 }
 
-const Highlight = ({ logoSrc, logoAlt, iconSrc, iconAlt, title, date }: Props) => {
+const Highlight = ({ logoSrc, logoAlt, iconSrc, iconAlt, title, date }: HighlightProps) => {
   return (
     <div className='card card-side card-highlight'>
         <div className='hover-3d'>

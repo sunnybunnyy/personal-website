@@ -1,9 +1,9 @@
-interface Props {
+export interface OverviewProps {
     title: string;
     contents: string[];
 }
 
-const Overview = ({ title, contents }: Props) => {
+const Overview = ({ title, contents }: OverviewProps) => {
   return (
     <>
         <h5>{title}</h5>
