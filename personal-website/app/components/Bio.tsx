@@ -1,8 +1,6 @@
-import React from 'react'
-
 const Bio = () => {
   return (
-    <div className='card mx-5 bg-white'>
+    <div className='card'>
       <div className='card-body'>
         <h2 className='card-title'>Bio</h2>
         <p>

@@ -23,30 +23,34 @@
 } */
 
 @layer base {
-  h1 {
-    @apply text-4xl font-bold;
-  }
-
-  h2 {
-    @apply text-3xl font-semibold;
-  }
-
   h3 {
-    @apply text-2xl;
+    @apply text-base;
+  }
+
+  h5 {
+    @apply text-xs;
   }
 }
 
 @layer components {
-  .profileContainer {
-    @apply flex justify-center;
-  }
-
   .profilePic {
     @apply rounded-full size-50 min-w-50 object-cover m-5;
   }
 
-  .profileDetails {
-    @apply my-20;
+  .logo {
+    @apply size-15;
+  }
+
+  .icon {
+    @apply size-5;
+  }
+
+  .iconContainer {
+    @apply flex items-center gap-x-2.5;
+  }
+
+  .card:not(.card-highlight) {
+    @apply mx-25 my-5 bg-white;
   }
 }
 
@@ -54,4 +58,5 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  padding-top: 1px;
 }
