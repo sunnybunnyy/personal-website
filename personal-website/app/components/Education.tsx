@@ -1,4 +1,5 @@
 import Highlight from "./Highlight"
+import Overview from "./Overview"
 import waterlooLogo from '../../public/waterlooLogo.png'
 import waterlooIcon from '../../public/waterlooIcon.png'
 
@@ -20,13 +21,15 @@ const Education = () => {
           AI Specialization, Psychology Minor <br />
           CGPA: 90%
         </p>
-        <h5>Relevant Coursework</h5>
-        <div className='card-actions'>
-          <button className='badge bg-strava-orange text-white'>Object-Orienting Programming</button>
-          <button className='badge bg-strava-orange text-white'>Computer Architecture</button>
-          <button className='badge bg-strava-orange text-white'>Algorithms</button>
-          <button className='badge bg-strava-orange text-white'>Operating Systems</button>
-        </div>
+        <Overview
+            title='Relevant Coursework'
+            contents={[
+                'Object-Orienting Programming',
+                'Computer Architecture',
+                'Algorithms',
+                'Operating Systems'
+            ]}
+        />
       </div>
     </div>
   )
