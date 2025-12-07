@@ -74,5 +74,5 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
-  padding-top: 1px;
+  padding: 1px 0;
 }

@@ -6,6 +6,7 @@ import Caribou from './components/experiences/Caribou'
 import Nokia from './components/experiences/Nokia'
 import Persimmon from './projects/Persimmon'
 import Growth from './projects/Growth'
+import Zone from './projects/Zone'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Nokia />
       <Persimmon />
       <Growth />
+      <Zone />
     </>
   )
 }

@@ -3,7 +3,7 @@ import Project from '../components/Project'
 const Growth = () => {
   return (
     <Project
-        title='Plant Growth Tracker'
+        title='Android Plant Growth Tracker'
         name='Growth'
         bullets={[
             'Developed app to track plant growth with photo capture and time-lapse video generation',
