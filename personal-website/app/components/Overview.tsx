@@ -8,8 +8,8 @@ const Overview = ({ title, contents }: OverviewProps) => {
     <>
         <h5>{title}</h5>
         <div className='card-actions'>
-            {contents.map((content) => 
-                <button className='badge bg-strava-orange text-white'>{content}</button>    
+            {contents.map((content, index) => 
+                <button key={index} className='badge bg-strava-orange text-white'>{content}</button>    
             )}
         </div>
     </>

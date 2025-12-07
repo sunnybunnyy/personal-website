@@ -8,8 +8,8 @@ interface ExperienceProps {
     title: string,
     role: string,
     description: string[],
-    techStack: OverviewProps,
-    time: OverviewProps
+    techStack: string[],
+    time: Number
 }
 
 const Experience = ({ highlightProps, title, role, description, techStack, time }: ExperienceProps) => {
@@ -20,12 +20,18 @@ const Experience = ({ highlightProps, title, role, description, techStack, time 
         <Highlight {...highlightProps} />
         <h6>{role}</h6>
         <ul>
-            {description.map((bullet) => 
-            <li>{bullet}</li>
+            {description.map((bullet, index) => 
+            <li key={index} className='list-disc'>{bullet}</li>
         )}
         </ul>
-        <Overview {...techStack} />
-        <Overview {...time} />
+        <Overview
+            title='Tech Stack'
+            contents={techStack}
+        />
+        <Overview
+            title='Time'
+            contents={[time.toString() + ' months']}
+        />
       </div>
     </div>
   )

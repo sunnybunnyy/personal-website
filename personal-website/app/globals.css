@@ -30,6 +30,10 @@
   h5 {
     @apply text-xs;
   }
+
+  h6 {
+    @apply font-bold;
+  }
 }
 
 @layer components {
@@ -38,7 +42,11 @@
   }
 
   .logo {
-    @apply size-15;
+    @apply w-15;
+  }
+
+  .hover-3d {
+    /* @apply items-center; */
   }
 
   .icon {
@@ -50,7 +58,11 @@
   }
 
   .card:not(.card-highlight) {
-    @apply mx-25 my-5 bg-white;
+    @apply mx-25 my-5 bg-white min-w-100;
+  }
+
+  .list-disc {
+    @apply ml-5;
   }
 }
 
