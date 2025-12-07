@@ -45,10 +45,6 @@
     @apply w-15;
   }
 
-  .hover-3d {
-    /* @apply items-center; */
-  }
-
   .icon {
     @apply size-5;
   }

@@ -1,23 +1,23 @@
 import Image from 'next/image'
-import { StaticImageData } from 'next/image';
+import ImageProps from './Image';
 
 export interface HighlightProps {
-    logoSrc: StaticImageData;
-    logoAlt: string;
-    iconSrc: StaticImageData;
-    iconAlt: string;
+    logo: ImageProps
+    icon: ImageProps
     title: string;
     date: string;
 }
 
-const Highlight = ({ logoSrc, logoAlt, iconSrc, iconAlt, title, date }: HighlightProps) => {
+const Highlight = ({ logo, icon, title, date }: HighlightProps) => {
   return (
     <div className='card card-side card-highlight'>
         <div className='hover-3d'>
           <Image 
-            src={logoSrc} 
+            src={logo.src}
             className='logo'
-            alt={logoAlt}
+            alt={logo.alt}
+            width={60}
+            height={60}
           />
 
           <div></div>
@@ -33,9 +33,11 @@ const Highlight = ({ logoSrc, logoAlt, iconSrc, iconAlt, title, date }: Highligh
             <h4 className='card-title'>{title}</h4>
             <div className='iconContainer'>
                 <Image
-                    src={iconSrc}
+                    src={icon.src}
                     className='icon'
-                    alt={iconAlt}
+                    alt={icon.alt}
+                    width={20}
+                    height={20}
                 />
                 <h5>{date}</h5>
             </div>

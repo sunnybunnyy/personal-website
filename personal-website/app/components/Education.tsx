@@ -1,7 +1,5 @@
 import Highlight from "./Highlight"
 import Overview from "./Overview"
-import waterlooLogo from '../../public/waterlooLogo.png'
-import waterlooIcon from '../../public/waterlooIcon.png'
 
 const Education = () => {
   return (
@@ -9,10 +7,14 @@ const Education = () => {
       <div className='card-body'>
         <h2 className='card-title'>Education</h2>
         <Highlight
-            logoSrc={waterlooLogo}
-            logoAlt='University of Waterloo logo'
-            iconSrc={waterlooIcon}
-            iconAlt='University icon'
+            logo={{
+              src: '/waterlooLogo.png',
+              alt: 'University of Waterloo logo'
+            }}
+            icon={{
+              src: '/waterlooIcon.png',
+              alt: 'University icon'
+            }}
             title='University of Waterloo'
             date='Sep. 2023 - Apr. 2027'
         />
