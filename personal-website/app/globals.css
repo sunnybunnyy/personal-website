@@ -60,6 +60,14 @@
   .list-disc {
     @apply ml-5;
   }
+
+  .screenshotContainer {
+    @apply flex gap-x-5;
+  }
+
+  .screenshot {
+    @apply w-0 flex-1;
+  }
 }
 
 body {

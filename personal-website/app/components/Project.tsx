@@ -24,16 +24,18 @@ const Project = ({ title, name, bullets, techStack, screenshots }: ProjectProps)
           title='Tech Stack'
           contents={techStack}
         />
-        {screenshots.map((screenshot, index) =>
-          <Image 
-            key={index}
-            src={screenshot.src}
-            alt={screenshot.alt}
-            className='screenshot'
-            width={100}
-            height={100}
-          />
-        )}
+        <div className='screenshotContainer'>
+          {screenshots.map((screenshot, index) =>
+            <Image 
+              key={index}
+              src={screenshot.src}
+              alt={screenshot.alt}
+              className='screenshot'
+              width={1000}
+              height={1000}
+            />
+          )}
+        </div>
       </div>
     </div>
   )
