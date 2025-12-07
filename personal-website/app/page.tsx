@@ -5,6 +5,7 @@ import Ford from './components/experiences/Ford'
 import Caribou from './components/experiences/Caribou'
 import Nokia from './components/experiences/Nokia'
 import Persimmon from './projects/Persimmon'
+import Growth from './projects/Growth'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Caribou />
       <Nokia />
       <Persimmon />
+      <Growth />
     </>
   )
 }
