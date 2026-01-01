@@ -16,11 +16,11 @@ const Zone = () => {
             ]}
             screenshots={[
                 {
-                    src: '/projects/zone3.png',
+                    src: '/projects/zone1.png',
                     alt: 'Zone screen 1'
                 },
                 {
-                    src: '/projects/zone4.png',
+                    src: '/projects/zone2.png',
                     alt: 'Zone screen 2'
                 }
             ]}
