@@ -4,9 +4,9 @@ import Education from './components/Education'
 import Ford from './components/experiences/Ford'
 import Caribou from './components/experiences/Caribou'
 import Nokia from './components/experiences/Nokia'
-import Persimmon from './projects/Persimmon'
-import Growth from './projects/Growth'
-import Zone from './projects/Zone'
+import Persimmon from './components/projects/Persimmon'
+import Growth from './components/projects/Growth'
+import Zone from './components/projects/Zone'
 
 const Home = () => {
   return (
