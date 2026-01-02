@@ -3,13 +3,16 @@
 import { useState, useEffect } from 'react'
 
 const ThemeController = () => {
-    const [isdark, setIsdark] = useState(
-        JSON.parse(localStorage.getItem('isdark') || '')
-    );
-  useEffect(() => {
-    localStorage.setItem('isdark', JSON.stringify(isdark));
-    document.documentElement.setAttribute("data-theme", isdark ? "dark" : "light");
-  }, [isdark]);
+    const [isdark, setIsdark] = useState('');
+
+    useEffect(() => {
+        setIsdark(JSON.parse(localStorage.getItem('isdark') || ''));
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem('isdark', JSON.stringify(isdark));
+        document.documentElement.setAttribute("data-theme", isdark ? "dark" : "light");
+    }, [isdark]);
   
   return (
     <label className="theme-control flex cursor-pointer gap-2">
