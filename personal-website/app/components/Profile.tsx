@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import profilePic from '../../public/profilePic.jpg'
+import ThemeController from './ThemeController'
 
 const Profile = () => {
   return (
@@ -24,6 +25,7 @@ const Profile = () => {
           <h1 className='card-title text-4xl font-bold'>Radha Kotra</h1>
           <h3>Software Engineer | Computer Science @ uWaterloo</h3>
         </div>
+        <ThemeController/>
     </div>
   )
 }

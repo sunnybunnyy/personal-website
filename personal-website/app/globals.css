@@ -1,28 +1,32 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: bumblebee;
+  themes: dark --default --prefersdark, light;
 }
 
-:root {
+[data-theme='light'] {
   --background: #f6f6f6;
+  --middleground: #ffffff;
   --foreground: #171717;
-  --strava-orange: #fc5200;
+}
+
+[data-theme='dark'] {
+  --background: #000000;
+  --middleground: #151515;
+  --foreground: #f6f6f6;
 }
 
 @theme {
   --color-background: var(--background);
+  --color-middleground: var(--middleground);
   --color-foreground: var(--foreground);
-  --color-strava-orange: var(--strava-orange);
+  --color-strava-orange: #fc5200;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 @layer base {
+  body {
+    @apply bg-background text-foreground font-sans py-1;
+  }
+
   h3 {
     @apply text-base;
   }
@@ -54,7 +58,7 @@
   }
 
   .card:not(.card-highlight) {
-    @apply mx-25 my-5 bg-white min-w-100;
+    @apply mx-25 my-5 bg-middleground min-w-130;
   }
 
   .list-disc {
@@ -68,11 +72,8 @@
   .screenshot {
     @apply w-0 flex-1;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
-  padding: 1px 0;
+  .theme-control {
+    @apply m-5;
+  }
 }
